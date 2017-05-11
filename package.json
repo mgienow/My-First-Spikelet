@@ -1,0 +1,35 @@
+{
+  "name": "first-spike",
+  "description": "Playing around with Spike",
+  "version": "0.0.1",
+  "author": "mgienow",
+  "ava": {
+    "verbose": "true"
+  },
+  "bugs": "https://github.com/mgienow/first-spike/issues",
+  "dependencies": {
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "^1.1.8",
+    "reshape-standard": "^1.0.0",
+    "spike-css-standards": "^1.0.0",
+    "spike-page-id": "^1.0.0",
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {
+    "ava": "^0.19.0",
+    "rimraf": "^2.6.0",
+    "snazzy": "^6.0.0",
+    "spike-core": "^1.0.0",
+    "standard": "^10.0.0"
+  },
+  "homepage": "https://github.com/mgienow/first-spike",
+  "main": "app.js",
+  "private": true,
+  "repository": "https://github.com/mgienow/first-spike",
+  "scripts": {
+    "lint": "standard | snazzy",
+    "precommit": "npm run lint -s",
+    "pretest": "npm run lint -s",
+    "test": "NODE_ENV=test ava"
+  }
+}
